@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+<link rel="stylesheet" href="login.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <nav>
+    <div class="container-fluid bg-danger">
+      <div class="navbar-header">
+        <a class="navbar-brand bg-danger" href="#">FETCH </a>
+      </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="bg-danger"><a href="index.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li class="bg-danger"><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
+</nav>
+    <div class="container mx-auto">
+       <form action="app.html" class="form" >
+          <h1 class="mx-auto" style="color: rgb(30, 240, 93);">User Login</h1>
+          <div class="input-group mx-auto">
+            <label class="mx-auto" for="uname" style="color: rgb(218, 214, 26);">Username</label>
+            <input class="mx-auto" type="text" id="uname" name="uname" >
+            <div class="error"></div>
+          </div>  
+          
+          <div class="input-group mx-auto">
+            <label class="mx-auto" for="pwd" style="color: rgb(218, 214, 26);">Password</label>
+            <input class="mx-auto" type="password" id="pwd" name="pswd">
+            <div class="error"></div>
+          </div>
+          <div class="input-group mx-auto">
+            <button class="btn mx-auto w-100" type="submit" id="logbtn">Login</button>
+          </div>
+
+          
+
+          
+          
+        </form>
+        <footer id="footer">
+          <div class="container-fluid">
+          <p>Contact NO:+91-9345993500</p>
+          
+          <a href="mailto:hege@example.com">muthuselvi32199@gmail.com</a></p>
+        </footer>
+    </div>
+
+      <script>
+        const login = document.querySelector(".form");
+        login.addEventListener("submit",function(event){
+          // event.preventDefault();
+          const username = document.getElementById("uname").value;
+          const password = document.getElementById("pwd").value;
+          if(username === "" || password === ""){
+            alert("Please fill in all fields.");
+          }
+          else{
+            alert("successfull login")
+          }
+        })
+         
+      </script>
+</body>
+</html>
+

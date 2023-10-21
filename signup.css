@@ -1,0 +1,48 @@
+body{
+    background-image: url(Loginbackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .h1
+  {
+    color:#d65a84;
+  
+  }
+  .container
+  {
+      text-align: center;
+      z-index: 1;
+  }
+  button {
+    background-color: #d65a84;
+    color: white;
+  cursor: pointer;
+  }
+  .login,.btn{
+      width:200px;
+      padding: 10px;
+  color:wheat;
+  text-decoration: none;
+  }
+  .input-group
+  {
+    
+    padding: 3px;
+    border-radius: 3px;
+  
+  }
+  
+  
+  .input-group input{
+    padding:10px;
+    font-size: 20px;
+    margin-top: 5px;
+    border: 1px solid rgb(118, 218, 248);
+    width: 20%;
+  }
+   .input-group .error{
+    color: red;
+    font-size: 10px;
+  }
+  
+  
